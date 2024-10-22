@@ -1,0 +1,40 @@
+.output-table {
+  border: 1px solid #e5e7eb !important;
+  border-radius: 4px;
+  overflow: hidden;
+  th {
+    border: 0 !important;
+    &::before {
+      display: none;
+    }
+    &.ant-table-cell {
+      padding: 8px !important;
+    }
+  }
+  tr > td {
+    border: 0 !important;
+    &:first-child {
+      min-width: 160px !important;
+      display: flex;
+    }
+    &.ant-table-cell {
+      padding: 8px;
+    }
+  }
+}
+
+.function-table-expand-empty {
+  position: relative;
+  &::before {
+    content: "";
+    width: 23px;
+    border-top: 1px dashed #e5e7eb;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+  }
+}
+.z-60 {
+  z-index: 60;
+}
